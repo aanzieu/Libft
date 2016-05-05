@@ -6,7 +6,7 @@
 /*   By: aanzieu <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/10 20:06:08 by aanzieu           #+#    #+#             */
-/*   Updated: 2016/03/14 23:41:14 by aanzieu          ###   ########.fr       */
+/*   Updated: 2016/05/05 21:14:33 by aanzieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ size_t	ft_strlen(const char *str)
 {
 	size_t	j;
 
-	j = 0;
-	while (str[j])
-		j++;
+	j = -1;
+	while (str[++j])
+		;
 	return (j);
 }
